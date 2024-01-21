@@ -1,0 +1,97 @@
+import math
+
+def calc():
+    while True:
+        print(" ")
+        print("==========================================================")
+        print(" ")
+        wel = "Welcome, What Operation Do You Want To Perform:"
+        
+        print(wel.center(30))
+        
+        print(" ")
+
+        print("1. Addition(+)")
+
+
+        print("2. Subtraction(-)")
+
+
+        print("3. Multiplication(*)")
+
+
+        print("4. Division(/)")
+
+
+        print("5. SquareRoot(âˆš)")
+
+
+        print("6. Square(^)")
+
+
+        print("7. Modulus(%)")
+
+        print(" ")
+        print("****************************************")
+       
+        ret = int(input("Enter The Number For An Operation: "))
+        
+        
+        if ret == 1:
+            add_1 = int(input("First Number To Added:  "))
+            add_2 = int(input("Second Number To Added:"))
+            
+            result = add_1 + add_2       
+            print("Result: {}".format(result))
+            
+        elif ret == 2:
+            sub_1 = int(input(" Number To Subtract From: "))
+            sub_2 = int(input("Number To Be Subtracted: "))
+            
+            result = sub_1  - sub_2
+            
+            print("Result: {}".format(result))
+            
+            
+        elif ret == 3:
+            mut_1 = int(input(" Number To Be Multiplied: "))
+            mut_2 = int(input("Number To Multiply By: "))
+            
+            result = mut_1 *mut_2
+            
+            print("Result: {}".format(result))
+            
+            
+        elif ret == 4:
+            
+            div_1 = int(input(" Number To Be Divided: "))
+            div_2 = int(input("Number To Divide By: "))
+            
+            result = div_1/div_2
+            
+            print("Result: {}".format(result))
+            
+            
+        elif ret == 5:
+            rot_1 = int(input(" Number To Find Root: "))
+            result = math.sqrt(rot_1)
+            
+            print("Result: {}".format(result))
+        
+        
+        
+        elif ret == 6:
+            pow_1 = int(input(" Number To Find Power: "))
+            result = (pow_1**2)
+            
+            print("Result: {}".format(result))
+                    
+        elif ret == 7:
+            mod_1 = int(input(" Number To Find Mod: "))
+            mod_2 = int(input("Number To Find Mod With: "))
+            result = mod_1 % mod_2
+            
+            print("Result: {}".format(result))
+          
+     
+calc()
